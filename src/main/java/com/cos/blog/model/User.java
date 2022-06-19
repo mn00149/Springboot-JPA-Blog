@@ -14,10 +14,14 @@ import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicInsert;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-
-@Entity//이 클래스가 자동으로 테이블 설정 해준다
+import lombok.NoArgsConstructor;
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity//이 클래스가 자동으로 테이블 설정 해준다
+
 //@DynamicInsert//인서트시 널 필드 제외 ,디폴트값 넣어주기 용이
 public class User {
 	@Id//PK
